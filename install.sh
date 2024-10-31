@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Check if running on WSL/Ubuntu and install required packages
+if grep -q "Microsoft" /proc/version || grep -q "microsoft" /proc/version; then
+    echo "WSL detected - Installing required packages..."
+    # Update package list
+    sudo apt update
+    # Install compiler
+    sudo apt install -y build-essential 
+fi
+
 # Remove existing nvim config directory if it exists
 rm -rf ~/.config/nvim
 

@@ -1,3 +1,6 @@
 [user]
 	email = rasmus.svala@hotmail.com
-	name = Rasmus Svala
+  name = Rasmus Svala
+
+[core]
+  editor = nvim

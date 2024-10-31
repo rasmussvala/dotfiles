@@ -1,12 +1,16 @@
 #!/bin/bash
 
-# Create the directory for Neovim if it doesn't exist
+# Remove existing nvim config directory if it exists
+rm -rf ~/.config/nvim
+
+# Create the directory for Neovim
 mkdir -p ~/.config/nvim
 
-# Create symlinks for Zsh, Neovim, and Git configurations
+# Create symlinks for Zsh and Git configurations
 ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/nvim/init.lua ~/.config/nvim/init.lua
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 
-echo "Dotfiles have been symlinked!"
+# Create symlink for the entire nvim directory
+ln -sf ~/dotfiles/nvim/* ~/.config/nvim/
 
+echo "Dotfiles have been symlinked!"

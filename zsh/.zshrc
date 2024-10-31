@@ -5,3 +5,4 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+alias desk='cd /mnt/c/Users/rasmu/Desktop'

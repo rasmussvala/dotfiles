@@ -7,9 +7,9 @@ Repo for managing my dotfiles.
 * **Shell**: zsh with oh-my-zsh
 
 ## Notes
-To ensure that Neovim works properly, install the `build-essential` package:
+To ensure that Neovim works properly, install the `build-essential` and `unzip` packages:
 
 ```bash
 sudo apt-get update
-sudo apt-get install build-essential
+sudo apt-get install -y build-essential unzip
 ```

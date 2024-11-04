@@ -1,19 +1,19 @@
 -- formatter and linters
 
 return {
-  "nvimtools/none-ls.nvim",
-  config = function()
-    local null_ls = require("null-ls")
-    null_ls.setup({
-      sources = {
-        -- make sure they are all installed in mason
-        null_ls.builtins.formatting.stylua,
-        null_ls.builtins.formatting.prettier,
-        null_ls.builtins.diagnostics.eslint_d,
-        null_ls.builtins.diagnostics.htmllint,
-      },
-    })
+	"nvimtools/none-ls.nvim",
+	config = function()
+		local null_ls = require("null-ls")
+		null_ls.setup({
+			sources = {
+				-- make sure they are all installed in mason
+				null_ls.builtins.formatting.stylua,
+				null_ls.builtins.formatting.prettier,
+				-- null_ls.builtins.diagnostics.eslint_d, -- can't get it to work atm, will check later
+				-- null_ls.builtins.diagnostics.htmlhint,
+			},
+		})
 
-    vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
-  end,
+		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+	end,
 }

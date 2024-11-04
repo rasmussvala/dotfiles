@@ -1,3 +1,5 @@
+-- colorscheme
+
 return {
   {
     "catppuccin/nvim",

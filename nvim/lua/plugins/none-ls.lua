@@ -1,6 +1,3 @@
--- Initialize Mason and Null-LS
-require("mason").setup()
-
 -- Function to ensure tools are installed
 local function ensure_installed(servers)
 	local mason_registry = require("mason-registry")

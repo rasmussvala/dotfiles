@@ -1,7 +1,3 @@
-return {}
-
---[[
-
 return {
   {
     "hrsh7th/cmp-nvim-lsp"
@@ -45,5 +41,4 @@ return {
       })
     end,
   },
-} 
-]]
+}

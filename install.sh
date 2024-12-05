@@ -1,12 +1,16 @@
 #!/bin/bash
 
-# Remove existing nvim config directory if it exists
+# Remove existing config directories if they exists
 rm -rf ~/.config/nvim
+rm -rf ~/.config/kitty
 
-# Create the directory for Neovim
+# Create directories
 mkdir -p ~/.config/nvim
+mkdir -p ~/.config/kitty
 
-# Create a symlink for the nvim directory
+# Create symlink
+ln -sf ~/dotfiles/kitty/* ~/.config/kitty/
 ln -sf ~/dotfiles/nvim/* ~/.config/nvim/
 
 echo "Dotfiles have been symlinked!"
+

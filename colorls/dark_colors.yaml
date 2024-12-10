@@ -1,0 +1,49 @@
+# This is a GPT catppuccin convertion.
+
+# Main Colors
+unrecognized_file: "#FAB387"  # Peach
+recognized_file:   "#F9E2AF"  # Yellow
+executable_file:   "#A6E3A1"  # Green
+dir:               "#89B4FA"  # Blue
+
+# Link
+dead_link: "#F28FAD"  # Red
+link:      "#94E2D5"  # Teal
+
+# Special Files
+socket:    "#A6E3A1"  # Green
+blockdev:  "#A6E3A1"  # Green
+chardev:   "#A6E3A1"  # Green
+
+# Access Modes
+write:     "#EBCB8B"  # Yellow (darkkhaki equivalent)
+read:      "#A6E3A1"  # Green
+exec:      "#F28FAD"  # Red
+no_access: "#F38BA8"  # Indian Red
+
+# Age
+day_old:     "#A6E3A1"  # Green
+hour_old:    "#89B4FA"  # Blue
+no_modifier: "#A6E3A1"  # Seagreen
+
+# File Size
+file_large:  "#FAB387"  # Orange
+file_medium: "#F9E2AF"  # Yellow
+file_small:  "#F5C2E7"  # Pink
+
+# Random
+report: "#CDD6F4"  # White
+user:   "#F5E0DC"  # Moccasin equivalent
+tree:   "#94E2D5"  # Cyan/Teal
+empty:  "#F9E2AF"  # Yellow
+error:  "#F38BA8"  # Red
+normal: "#EBCB8B"  # Darkkhaki equivalent
+inode:  "#F5E0DC"  # Moccasin equivalent
+
+# Git
+addition:     "#A6E3A1"  # Green
+modification: "#FAB387"  # Peach
+deletion:     "#F38BA8"  # Dark Red equivalent
+untracked:    "#F9E2AF"  # Yellow
+unchanged:    "#A6E3A1"  # Forest Green
+
